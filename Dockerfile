@@ -1,7 +1,6 @@
 FROM lscr.io/linuxserver/kali-linux:latest
 ARG NGROK_TOKEN
-ARG PASSWORD=rootuser
-
+ARG PASSWORD
 # Install packages and set locale
 RUN apt-get update \
     && apt-get install -y locales nano ssh sudo python3 curl libkf5config-bin  wget \
